@@ -14,7 +14,9 @@ export default function Hero() {
       </div>
 
       <div className="h-80">
-        <BackgroundBeams></BackgroundBeams>
+        <div>
+          <BackgroundBeams/>
+        </div>
 
         <div className="flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-50 max-w-80">
