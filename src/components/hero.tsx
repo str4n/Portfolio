@@ -8,13 +8,13 @@ import {BsArrowRight} from "react-icons/bs";
 
 export default function Hero() {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-16 sm:pt-26 md:pt-30">
       <div>
         <Spotlight/>
       </div>
 
-      <div className="h-80">
-        <div>
+      <div className="h-70 sm:h-80">
+        <div className="hidden sm:block">
           <BackgroundBeams/>
         </div>
 
