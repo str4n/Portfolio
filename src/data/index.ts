@@ -8,37 +8,30 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "md:col-span-2 md:row-span-2",
-    imgClassName: "w-full h-full",
-    img: "/b1.svg",
-    spareImg: "",
-  },
-  {
-    id: 2,
     title: "My tech stack",
     description: "I constantly try to improve",
+    className: "md:col-span-2",
     img: "",
     spareImg: "",
   },
   {
-    id: 3,
+    id: 2,
     title: "Tech enthusiast with a passion for development.",
     description: "",
+    className: "md:col-span-1",
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Currently building a instant online communicator",
     description: "The Inside Scoop",
     img: "/b5.svg",
     spareImg: "/grid.svg",
   },
   {
-    id: 5,
+    id: 4,
     title: "Do you want to start a project together?",
     description: "",
     img: "",
@@ -81,38 +74,85 @@ export const projects = [
   },
 ];
 
-export const companies = [
+export const technologies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: ".NET",
+    img: "",
   },
+
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "C#",
+    img: "",
   },
+
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "Azure",
+    img: "/azure.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "PostgreSql",
+    img: "/postgres.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "RabbitMq",
+    img: "/rabbitmq.svg",
   },
-];
+  {
+    id: 6,
+    name: "Redis",
+    img: "/redis.svg",
+  },
+  {
+    id: 7,
+    name: "Docker",
+    img: "/docker.svg",
+  },
+  {
+    id: 8,
+    name: "Git",
+    img: "/git.svg",
+  },
+  {
+    id: 9,
+    name: "HTML",
+    img: "/html.svg",
+  },
+  {
+    id: 10,
+    name: "CSS",
+    img: "/css.svg",
+  },
+  {
+    id: 11,
+    name: "Typescript",
+    img: "/ts.svg",
+  },
+  {
+    id: 12,
+    name: "React.js",
+    img: "/react.svg",
+  },
+  {
+    id: 13,
+    name: "Vercel",
+    img: "/vercel.svg",
+  },
+  {
+    id: 14,
+    name: "Next.js",
+    img: "/nextjs.svg",
+  },
+  {
+    id: 15,
+    name: "Tailwindcss",
+    img: "/tailwindcss.svg",
+  },
+]
 
 export const socialMedia = [
   {

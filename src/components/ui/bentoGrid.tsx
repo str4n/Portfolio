@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import {BackgroundGradientAnimation} from "@/components/ui/backgroundGrandient";
+import {InfiniteMovingTechnologies} from "@/components/ui/infiniteMovingTechnologies";
+import {technologies} from "@/data";
 
 export const BentoGrid = ({
                             className,
@@ -39,16 +41,22 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const middle = Math.floor(technologies.length / 2);
+  const firstHalf = technologies.slice(0, middle);
+  const secondHalf = technologies.slice(middle);
+
+  const tech1 = [...firstHalf, ...firstHalf.map(item => ({ ...item, id: item.id + firstHalf.length }))];
+  const tech2 = [...secondHalf, ...secondHalf.map(item => ({ ...item, id: item.id + secondHalf.length }))];
   return (
     <div
       className={cn(
-        "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 " +
-        "dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input " +
+        "dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
       )}
-      style={{background: 'rgb(0,0,0)',}}
+      style={{background: '#000'}}
     >
-      <div className={`${id === 5} && 'flex justify-center h-full'`}>
+      <div className={`${id === 4} && 'flex justify-center h-full'`}>
         <div className="w-full h-full absolute">
           {img && 
             (<img 
@@ -57,7 +65,7 @@ export const BentoGridItem = ({
               className={cn(imgClassName, "object-cover object-center")} />)}
         </div>
         
-        <div className={`absolute right-0 -bottom-5 ${id === 4 && 'w-full opacity-80'}`}>
+        <div className={`absolute right-0 -bottom-5 ${id === 3 && 'w-full opacity-80'}`}>
           {spareImg && (
             <img
               src={spareImg}
@@ -66,7 +74,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        {id === 5 && (
+        {id === 4 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 flex items-center justify-center text-white font-bold"/>
           </BackgroundGradientAnimation>
@@ -83,24 +91,11 @@ export const BentoGridItem = ({
           </div>
         
 
-        {id === 2 && (
-          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col gap-3 lg:gap-8">
-              {['C#', '.NET', 'Azure'].map((item) => (
-                <span key={item}
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-100 rounded-lg text-center bg-white">
-                  {item}
-                </span>
-              ))}
-            </div>
-
-            <div className="flex flex-col gap-3 lg:gap-8">
-              {['Typescript', 'Next.js', 'Tailwindcss',].map((item) => (
-                <span key={item}
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-100 rounded-lg text-center bg-white">
-                  {item}
-                </span>
-              ))}
+        {id === 1 && (
+          <div className="">
+            <div className="pt-2 md:pt-10">
+              <InfiniteMovingTechnologies items={tech1}/>
+              <InfiniteMovingTechnologies items={tech2} direction="right"/>
             </div>
           </div>
         )}
