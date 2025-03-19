@@ -1,10 +1,8 @@
 import React from 'react'
 import {Spotlight} from "@/components/ui/spotlight";
-import {BackgroundBeams} from "@/components/ui/backgroundBeams";
 import {TextGenerateEffect} from "@/components/ui/textGenerateEffect";
 import WhiteButton from "@/components/ui/whiteButton";
 import {BsArrowRight} from "react-icons/bs";
-import {WorldMap} from "@/components/ui/worldMap";
 
 
 export default function Hero() {
@@ -19,7 +17,7 @@ export default function Hero() {
       </div>
 
       <div className="-mt-15">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center -mt-15 md:-mt-0">
           <h2 className="uppercase tracking-widest text-s text-center text-blue-50 max-w-80 mb-4">
             Web magic with .NET & Next.JS
           </h2>
