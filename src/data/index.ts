@@ -11,6 +11,7 @@ export const gridItems = [
     title: "My tech stack",
     description: "I constantly try to improve",
     className: "md:col-span-2",
+    titleClassName: "lg:text-5xl text-3xl",
     img: "",
     spareImg: "",
   },
@@ -18,17 +19,11 @@ export const gridItems = [
     id: 2,
     title: "Tech enthusiast with a passion for development.",
     description: "",
-    className: "md:col-span-1",
+    className: "lg:col-span-1 md:col-span-1",
+    imgClassName: "",
+    titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
-  },
-
-  {
-    id: 3,
-    title: "Currently building a instant online communicator",
-    description: "The Inside Scoop",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
   },
   {
     id: 4,
@@ -36,6 +31,16 @@ export const gridItems = [
     description: "",
     img: "",
     spareImg: "",
+  },
+  {
+    id: 3,
+    title: "Currently building a instant messaging communicator",
+    description: "The Inside Scoop",
+    className: "md:col-span-2 md:row-span-1",
+    imgClassName: "absolute md:left-48 -bottom-22 md:w-190 w-150 left-30 [mask-image:linear-gradient(to_right,transparent,white_10%,white_70%,transparent)]",
+    titleClassName: "justify-center text-3xl",
+    img: "/code.png",
+    spareImg: "/grid.svg",
   },
 ];
 
