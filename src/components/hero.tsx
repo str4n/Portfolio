@@ -27,7 +27,9 @@ export default function Hero() {
           <p className="text-center md:tracking-wide my-3 text-md md:text-xl lg:text-xl text-gray-300">Hi, I&apos;m
             Kamil, a Full Stack Developer based in Poland</p>
 
-          <WhiteButton text="Show my work" icon={<BsArrowRight size={18}/>} className="mt-5"/>
+          <a href="#about">
+            <WhiteButton text="Show my work" icon={<BsArrowRight size={18}/>} className="mt-5 px-12 py-4"/>
+          </a>
         </div>
       </div>
     </div>

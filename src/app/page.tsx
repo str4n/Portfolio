@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import {FloatingNav} from "@/components/ui/floatingNavbar";
 import Grid from "@/components/grid";
 import Reveal from "@/components/ui/reveal";
+import {navItems} from "@/data";
 
 export default function Home() {
   return (

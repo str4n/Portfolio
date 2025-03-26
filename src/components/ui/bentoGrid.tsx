@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
-import {BackgroundGradientAnimation} from "@/components/ui/backgroundGrandient";
 import {InfiniteMovingTechnologies} from "@/components/ui/infiniteMovingTechnologies";
 import {technologies} from "@/data";
+import WhiteButton from "@/components/ui/whiteButton";
+import {BsCursorFill} from "react-icons/bs";
 
 export const BentoGrid = ({
                             className,
@@ -13,7 +14,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-5 md:gap-4 max-w-7xl mx-auto ",
         className
       )}
     >
@@ -84,17 +85,23 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          <div className={cn('font-sans font-bold text-white text-2xl lg:text-3xl md:text-3xl max-w-96 z-10', titleClassName)}>
+          <div className={cn('font-sans font-bold text-white text-xl sm:text-2xl lg:text-3xl md:text-3xl max-w-96 z-10', titleClassName)}>
             {title}
           </div>
         </div>
 
         {id === 1 && (
-          <div className="pb-5">
+          <div className="pb-5 mt-2">
             <div>
               <InfiniteMovingTechnologies items={tech1}/>
               <InfiniteMovingTechnologies items={tech2} direction="right"/>
             </div>
+          </div>
+        )}
+
+        {id === 4 && (
+          <div className="flex justify-center mb-5">
+            <WhiteButton text="Contact" icon={<BsCursorFill/>} className="px-18 py-3 md:px-12 md:py-4"/>
           </div>
         )}
       </div>
