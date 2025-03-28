@@ -101,7 +101,7 @@ export const BentoGridItem = ({
 
         {id === 4 && (
           <div className="flex justify-center mb-5">
-            <WhiteButton text="Contact" icon={<BsCursorFill/>} className="px-18 py-3 md:px-12 md:py-4"/>
+            <WhiteButton text="Contact" icon={<BsCursorFill/>} className="px-[18vw] py-3 md:px-[3vw] md:py-4"/>
           </div>
         )}
       </div>

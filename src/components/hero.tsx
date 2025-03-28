@@ -2,16 +2,12 @@ import React from 'react'
 import {Spotlight} from "@/components/ui/spotlight";
 import {TextGenerateEffect} from "@/components/ui/textGenerateEffect";
 import WhiteButton from "@/components/ui/whiteButton";
-import {BsArrowRight} from "react-icons/bs";
+import {BsArrowDown, BsArrowRight} from "react-icons/bs";
 
 
 export default function Hero() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div>
-        {/*<BackgroundBeams/>*/}
-      </div>
-      
+    <div className="flex flex-col items-center justify-center h-screen">
       <div>
         <Spotlight/>
       </div>
@@ -30,6 +26,13 @@ export default function Hero() {
           <a href="#about">
             <WhiteButton text="Show my work" icon={<BsArrowRight size={18}/>} className="mt-5 px-12 py-4"/>
           </a>
+        </div>
+
+        <div className="absolute top-[80vh] right-[5vw] sm:top-[80vh] sm:right-[2vw] md:right-[5vw] md:top-[90vh] lg:top-[90vh] lg:right-[17vw]">
+          <p className="text-[#737373] flex items-center">
+            <span>Scroll to Explore</span>
+            <span className="ml-1"><BsArrowDown/></span>
+          </p>
         </div>
       </div>
     </div>

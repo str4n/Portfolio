@@ -3,6 +3,7 @@ import {FloatingNav} from "@/components/ui/floatingNavbar";
 import Grid from "@/components/grid";
 import Reveal from "@/components/ui/reveal";
 import {navItems} from "@/data";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
           <Hero/>
           <Reveal>
             <Grid/>
+          </Reveal>
+          <Reveal>
+            <Projects/>
           </Reveal>
         </div>
       </main>
