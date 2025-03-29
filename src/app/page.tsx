@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto scroll-m-12 scroll-smooth">
         <div className="max-w-9xl w-full">
-          <FloatingNav navItems={[]}/>
+          <FloatingNav navItems={navItems}/>
           <Hero/>
           <Reveal>
             <Grid/>
