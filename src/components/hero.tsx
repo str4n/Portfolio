@@ -3,6 +3,7 @@ import {Spotlight} from "@/components/ui/spotlight";
 import {TextGenerateEffect} from "@/components/ui/textGenerateEffect";
 import WhiteButton from "@/components/ui/whiteButton";
 import {BsArrowDown, BsArrowRight} from "react-icons/bs";
+import Reveal from "@/components/ui/reveal";
 
 
 export default function Hero() {
@@ -28,12 +29,15 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="absolute top-[80vh] right-[5vw] sm:top-[80vh] sm:right-[2vw] md:right-[5vw] md:top-[90vh] lg:top-[90vh] lg:right-[17vw]">
-          <p className="text-[#737373] flex items-center">
-            <span>Scroll to Explore</span>
-            <span className="ml-1"><BsArrowDown/></span>
-          </p>
-        </div>
+        <Reveal threshold={1}>
+          <div
+            className="absolute top-[80vh] right-[5vw] sm:top-[80vh] sm:right-[2vw] md:right-[5vw] md:top-[90vh] lg:top-[90vh] lg:right-[17vw]">
+            <p className="text-[#737373] flex items-center">
+              <span>Scroll to Explore</span>
+              <span className="ml-1"><BsArrowDown/></span>
+            </p>
+          </div>
+        </Reveal>
       </div>
     </div>
   )

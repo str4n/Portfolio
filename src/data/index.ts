@@ -48,8 +48,8 @@ export const gridItems = [
     id: 3,
     title: "Currently building a instant messaging communicator",
     description: "The Inside Scoop",
-    className: "md:col-span-2 md:row-span-2",
-    imgClassName: "absolute md:left-48 -bottom-22 md:w-190 w-150 left-30 [mask-image:linear-gradient(to_right,transparent,white_10%,white_70%,transparent)]",
+    className: "md:col-span-2 md:row-span-2 min-h-45",
+    imgClassName: "absolute md:left-48 -bottom-22 md:w-190 w-150 left-15 [mask-image:linear-gradient(to_right,transparent,white_10%,white_70%,transparent)]",
     titleClassName: "justify-center text-2xl md:text-3xl",
     img: "/code.png",
     spareImg: "/grid.svg",
@@ -59,35 +59,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Rapido - Digital wallet",
+    des: "Application for virtual funds transfers built using Microservices architecture, written in .NET 8.0.",
+    img: "/placeholder.svg",
+    iconLists: ["/csharp-color.svg", "/blazor-color.svg", "/redis-color.svg", "/postgresql-color.svg", "/rabbitmq-color.svg", "/docker-color.svg"],
+    link: "https://github.com/str4n/Rapido",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
+    title: "NConnect - Messenger",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    img: "/placeholder.svg",
+    iconLists: ["/csharp-color.svg", "/ts-color.svg", "/react-color.svg", "/tailwindcss-color.svg", "/redis-color.svg", "/azure-color.svg"],
+    link: "https://github.com/str4n/NConnect",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "NetStore - E-commerce",
+    des: "NetStore is the sample e-commerce app built as Modular Monolith, written in .NET 7.0",
+    img: "/placeholder.svg",
+    iconLists: ["/csharp-color.svg", "/postgresql-color.svg", "/rabbitmq-color.svg", "/docker-color.svg"],
+    link: "https://github.com/str4n/NetStore",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    title: "Portfolio - My portfolio website",
+    des: "My portfolio website built with NextJS | Typescript | Tailwindcss and more...",
+    img: "/placeholder.svg",
+    iconLists: ["/nextjs.svg", "/tailwindcss-color.svg", "/ts-color.svg"],
+    link: "https://github.com/str4n/Portfolio",
   },
 ];
 
@@ -169,6 +169,11 @@ export const technologies = [
     name: "Tailwindcss",
     img: "/tailwindcss.svg",
   },
+  {
+    id: 16,
+    name: "Blazor",
+    img: "/blazor.svg",
+  }
 ]
 
 export const socialMedia = [

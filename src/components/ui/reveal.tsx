@@ -2,9 +2,14 @@
 import {ReactNode, useEffect, useRef, useState} from "react";
 import {useIsVisible} from "@/hooks/useIsVisible";
 
-export default function Reveal({children} : {children: ReactNode}) {
+interface RevealProps {
+  children: ReactNode;
+  threshold?: number;
+}
+
+export default function Reveal({children, threshold = 0.2} : RevealProps) {
   const ref = useRef(null);
-  const isVisible = useIsVisible(ref);
+  const isVisible = useIsVisible(ref, threshold);
   const [isVisibleClass, setIsVisibleClass] = useState("");
   useEffect(() => {
     if (isVisible) {

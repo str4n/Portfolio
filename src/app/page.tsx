@@ -15,7 +15,7 @@ export default function Home() {
           <Reveal>
             <Grid/>
           </Reveal>
-          <Reveal>
+          <Reveal threshold={0.1}>
             <Projects/>
           </Reveal>
         </div>

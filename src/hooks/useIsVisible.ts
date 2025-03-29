@@ -15,7 +15,7 @@ export function useIsVisible(ref : RefObject<null | HTMLDivElement> | null, thre
       return () => {
         observer.disconnect();
       };
-    }, [ref]);
+    }, [ref, threshold]);
   
     return isIntersecting;
 }
