@@ -80,12 +80,12 @@ export const BentoGridItem = ({
         )}
 
         <div
-          className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative flex flex-col px-5 p-5 lg:p-10')}>
+          className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-400 relative flex flex-col px-5 p-5 lg:p-10')}>
           <div className="font-sans font-extralight text-blue-50 text-xs md:text-base lg:text-base z-10">
             {description}
           </div>
 
-          <div className={cn('font-sans font-bold text-white text-xl sm:text-2xl lg:text-3xl md:text-3xl max-w-96 z-10', titleClassName)}>
+          <div className={cn('font-sans font-medium text-white text-xl sm:text-2xl lg:text-3xl md:text-3xl max-w-96 z-10', titleClassName)}>
             {title}
           </div>
         </div>
@@ -100,9 +100,11 @@ export const BentoGridItem = ({
         )}
 
         {id === 4 && (
-          <div className="flex justify-center mb-5">
-            <WhiteButton text="Contact" icon={<BsCursorFill/>} className="px-[18vw] py-3 md:px-[3vw] md:py-4"/>
-          </div>
+          <a href="#contact">
+            <div className="flex justify-center mb-5">
+              <WhiteButton text="Contact" icon={<BsCursorFill/>} className="px-[18vw] py-3 md:px-[3vw] md:py-4"/>
+            </div>
+          </a>
         )}
       </div>
     </div>

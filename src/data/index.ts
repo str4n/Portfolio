@@ -60,7 +60,7 @@ export const projects = [
     id: 1,
     title: "Rapido - Digital wallet",
     des: "Application for virtual funds transfers built using Microservices architecture, written in .NET 8.0.",
-    img: "/rapido2.png",
+    img: "/Rapido.png",
     iconLists: ["/csharp-color.svg", "/blazor-color.svg", "/redis-color.svg", "/postgresql-color.svg", "/rabbitmq-color.svg", "/docker-color.svg"],
     link: "https://github.com/str4n/Rapido",
   },
@@ -178,14 +178,20 @@ export const technologies = [
 export const socialMedia = [
   {
     id: 1,
+    name: "github/str4n",
     img: "/git.svg",
+    link: "https://github.com/str4n/",
   },
   {
     id: 2,
+    name: "twitter/blank",
     img: "/twit.svg",
+    link: "https://x.com/",
   },
   {
     id: 3,
+    name: "@kamil-potocki7",
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/kamil-potocki7/",
   },
 ];

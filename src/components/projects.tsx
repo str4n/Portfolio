@@ -14,7 +14,7 @@ export default function Projects() {
         </h1>
       </div>
       
-      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 p-5 gap-16 sm:mt-5 md:mt-15 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 p-5 gap-16 mt-5 md:mt-15 max-w-7xl mx-auto">
         {projects.map(({id, title, des, img, iconLists, link}) => (
           <Reveal key={id} threshold={0.25}>
             <div className="flex flex-col justify-center border border-white/[0.1] rounded-3xl px-6 transform transition-all duration-200 hover:scale-102">
@@ -26,11 +26,11 @@ export default function Projects() {
                 <img src={img} alt={title} className="z-10 absolute bottom-0"/>
               </div>
 
-              <h1 className="font-bold lg:text-2xl md-text-xl text-base line-clamp-1 tracking-wide mt-5 mb-2">
+              <h1 className="font-medium lg:text-2xl md-text-xl text-base line-clamp-1 tracking-wide mt-5 mb-2">
                 {title}
               </h1>
 
-              <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 mb-6 text-blue-50">
+              <p className="lg:text-xl font-extralight text-sm line-clamp-2 mb-6 text-blue-50">
                 {des}
               </p>
 

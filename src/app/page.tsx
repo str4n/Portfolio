@@ -4,6 +4,7 @@ import Grid from "@/components/grid";
 import Reveal from "@/components/ui/reveal";
 import {navItems} from "@/data";
 import Projects from "@/components/projects";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <Reveal threshold={0.1}>
             <Projects/>
           </Reveal>
+          <Footer/>
         </div>
       </main>
     </>
