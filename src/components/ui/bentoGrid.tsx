@@ -3,7 +3,6 @@ import {InfiniteMovingTechnologies} from "@/components/ui/infiniteMovingTechnolo
 import {technologies} from "@/data";
 import WhiteButton from "@/components/ui/whiteButton";
 import {BsCursorFill} from "react-icons/bs";
-import Image from 'next/image';
 
 export const BentoGrid = ({
                             className,
