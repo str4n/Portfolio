@@ -85,7 +85,7 @@ export const InfiniteMovingTechnologies = ({
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
             className="relative max-w-xl py-1 px-4 md:py-2 md:px-4 rounded-3xl border border-white/[0.1] bg-black text-white md:text-xl flex items-center"
             key={item.id}
