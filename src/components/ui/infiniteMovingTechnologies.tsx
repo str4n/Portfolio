@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export const InfiniteMovingTechnologies = ({
                                       items,
@@ -92,7 +93,7 @@ export const InfiniteMovingTechnologies = ({
           >
             {item.img && (
               <div className="mr-2">
-                <img src={item.img}/>
+                <Image src={item.img} alt={item.name} width={22} height={22} />
               </div>
             )}
 

@@ -2,6 +2,7 @@ import React from 'react'
 import {projects} from "@/data";
 import {BsArrowUpRight} from "react-icons/bs";
 import Reveal from "@/components/ui/reveal";
+import Image from 'next/image';
 
 export default function Projects() {
   return (
@@ -20,10 +21,20 @@ export default function Projects() {
             <div className="flex flex-col justify-center border border-white/[0.1] rounded-3xl px-6 transform transition-all duration-200 hover:scale-102">
               <div className="relative flex justify-center items-center mt-8 md:mt-6">
                 <div className="relative w-full h-full bg-[#010101] overflow-hidden lg:rounded-3xl [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%,transparent)]">
-                  <img src="/bg.png" alt="bg-img" className="[mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]" />
+                  <Image 
+                    src="/bg.png" 
+                    alt="bg-img" 
+                    width={552}
+                    height={330}
+                    className="[mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]" />
                 </div>
 
-                <img src={img} alt={title} className="z-10 absolute bottom-0"/>
+                <Image 
+                  src={img} 
+                  alt={title} 
+                  width={1366}
+                  height={768}
+                  className="z-10 absolute bottom-0"/>
               </div>
 
               <h1 className="font-medium lg:text-2xl md-text-xl text-base line-clamp-1 tracking-wide mt-5 mb-2">
