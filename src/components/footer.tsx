@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <div id="contact" className="text-white md:mt-26 mt-9 md:mb-8 mb-3 max-w-7xl mx-auto p-4">
+    <div id="contact" className="text-white md:mt-20 mt-9 md:mb-8 mb-3 max-w-7xl mx-auto p-4">
       <hr className="border-t border-white/[0.1] w-full"/>
       
       <div className="flex items-center justify-between">

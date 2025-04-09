@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Projects() {
   return (
-    <div id="projects" className="text-white mt-35">
+    <div id="projects" className="text-white mt-40">
       <div className="">
         <h1 className="text-white text-center text-3xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug tracking-wide font-bold">A small selection of {' '}
           <span className="text-blue-50">

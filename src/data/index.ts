@@ -175,6 +175,27 @@ export const technologies = [
   }
 ]
 
+export const companies = [
+  {
+    id: 1,
+    name: "Vercel",
+    img: "/verc.svg",
+    nameImg: "/vercName.svg"
+  },
+  {
+    id: 2,
+    name: "Hostinger",
+    img: "/host.svg",
+    nameImg: "/hostName.svg"
+  },
+  {
+    id: 3,
+    name: "Docker",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg"
+  }
+]
+
 export const socialMedia = [
   {
     id: 1,

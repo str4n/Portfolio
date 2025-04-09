@@ -5,6 +5,7 @@ import Reveal from "@/components/ui/reveal";
 import {navItems} from "@/data";
 import Projects from "@/components/projects";
 import Footer from "@/components/footer";
+import Companies from "@/components/companies";
 
 export default function Home() {
   return (
@@ -13,12 +14,19 @@ export default function Home() {
         <div className="max-w-9xl w-full">
           <FloatingNav navItems={navItems}/>
           <Hero/>
+          
           <Reveal>
             <Grid/>
           </Reveal>
+          
           <Reveal threshold={0.1}>
             <Projects/>
           </Reveal>
+
+          <Reveal>
+            <Companies />
+          </Reveal>
+          
           <Footer/>
         </div>
       </main>
