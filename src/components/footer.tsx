@@ -7,10 +7,9 @@ export default function Footer() {
       <hr className="border-t border-white/[0.1] w-full"/>
       
       <div className="flex items-center justify-between">
-        <div className="md:mt-14 mt-5">
+        <div className="md:mt-10 mt-5">
           <div className="font-normal md:text-2xl text-lg">
             <p>kamilpotocki.net@gmail.com</p>
-            <p className="mt-2">+48 504 724 105</p>
           </div>
           
           <p className="md:text-base text-xs md:font-normal font-light text-[#737373] md:mt-10 mt-7">
